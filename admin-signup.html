@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ananya Group of Institution – Admin Sign Up</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="admin-signup.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="icon">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+    </svg>
+  </div>
+
+  <h1>Ananya Group of Institution</h1>
+  <p class="subtitle">College Management System</p>
+
+  <div class="tabs">
+    <div class="tab">Student Sign Up</div>
+    <div class="tab active">Admin Sign Up</div>
+  </div>
+
+  <div class="card">
+
+    <div class="group">
+      <label>Full Name</label>
+      <input id="name" type="text">
+    </div>
+
+    <div class="group">
+      <label>Admin ID</label>
+      <input id="adminId" type="text">
+    </div>
+
+    <div class="group">
+      <label>Email</label>
+      <input id="email" type="email">
+    </div>
+
+    <div class="group">
+      <label>Password</label>
+      <div class="input-box">
+        <input id="password" type="password">
+        <span class="toggle" onclick="togglePassword()">👁</span>
+      </div>
+    </div>
+
+    <button onclick="createAdminAccount()">Create Account</button>
+
+    <div class="footer">
+      Already have an admin account?
+      <a href="login.html?type=admin">Sign in</a>
+    </div>
+
+  </div>
+</div>
+
+<script src="admin-signup.js"></script>
+</body>
+</html>
